@@ -1,5 +1,7 @@
 package models;
 
+import java.io.Serializable;
+
 /**
  * The User class represents user information in the application. It has
  * differnt attributes: email, first name, last name, mobile number, address,
@@ -8,7 +10,7 @@ package models;
  *
  * @author Nerea and Irati
  */
-public class User {
+public class User implements Serializable{
 
     private String email;
     private String name;

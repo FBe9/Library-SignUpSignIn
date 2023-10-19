@@ -1,5 +1,6 @@
 package message;
 
+import java.io.Serializable;
 import models.User;
 
 /**
@@ -9,7 +10,7 @@ import models.User;
  *
  * @author Irati
  */
-public class ResponseRequest {
+public class ResponseRequest implements Serializable{
 
     private User user;
     private Message message;
