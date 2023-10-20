@@ -1,15 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package models;
 
 /**
+ * The Privilage enum defines different privilege levels that can be assigned to users in the application.
+ * It includes two privilege levels: USER and ADMIN.
  *
- * @author 2dam
+ * Users with 'USER' privilege have limited access, while users with 'ADMIN' have all the privileges.
+ *
+ * @author Nerea and Irati
  */
 public enum Privilage {
-    User,
-    Admin
+    USER,
+    ADMIN
 }
