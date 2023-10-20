@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * The User class represents user information in the application. It has
  * differnt attributes: email, first name, last name, mobile number, address,
- * and password. Users can have different privilege defined by the 'Privilage'
+ * and password. Users can have different privilege defined by the 'Privilege'
  * enumeration.
  *
  * @author Nerea and Irati
@@ -19,7 +19,7 @@ public class User implements Serializable{
     private String city;
     private String zip;
     private String password;
-    private Privilage privilage;
+    private Privilege privilege;
 
     //Contructors
     /**
@@ -33,10 +33,10 @@ public class User implements Serializable{
      * @param city The user's city.
      * @param zip The user's zip code.
      * @param password The user's password.
-     * @param privilage The user's privilege level defined by the 'Privilage'
+     * @param privilege The user's privilege level defined by the 'Privilege'
      * enumeration.
      */
-    public User(String email, String name, String mobile, String street, String city, String zip, String password, Privilage privilage) {
+    public User(String email, String name, String mobile, String street, String city, String zip, String password, Privilege privilege) {
         this.email = email;
         this.name = name;
         this.mobile = mobile;
@@ -44,7 +44,7 @@ public class User implements Serializable{
         this.city = city;
         this.zip = zip;
         this.password = password;
-        this.privilage = privilage;
+        this.privilege = privilege;
     }
 
     /**
@@ -195,21 +195,21 @@ public class User implements Serializable{
     /**
      * Get the privilege level of the user.
      *
-     * @return The privilege level of the user, defined by the 'Privilage'
+     * @return The privilege level of the user, defined by the 'Privilege'
      * enumeration.
      */
-    public Privilage getPrivilage() {
-        return privilage;
+    public Privilege getPrivilege() {
+        return privilege;
     }
 
     /**
      * Set the privilege level for the user.
      *
-     * @param privilage The privilege level to set, defined by the 'Privilage'
+     * @param privilege The privilege level to set, defined by the 'Privilege'
      * enumeration.
      */
-    public void setPrivilage(Privilage privilage) {
-        this.privilage = privilage;
+    public void setPrivilege(Privilege privilege) {
+        this.privilege = privilege;
     }
     //---------------------------------------------------------------------
 }

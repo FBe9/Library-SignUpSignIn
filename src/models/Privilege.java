@@ -8,7 +8,7 @@ package models;
  *
  * @author Nerea and Irati
  */
-public enum Privilage {
+public enum Privilege {
     USER,
     ADMIN
 }
