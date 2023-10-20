@@ -19,7 +19,7 @@ public interface Signable {
      * @throws EmailExistsException If the provided email address already exists in the database.
      * @throws DatabaseErrorException If there is an error with the database during user registration.
      */
-    public User signUp(User user) throws ServerErrorException, EmailExitsException, DatabaseErrorException;
+    public User signUp(User user) throws ServerErrorException, EmailExistsException, DatabaseErrorException;
     
     /**
      * Sign in a user with the provided user credentials.
