@@ -17,9 +17,8 @@ public interface Signable {
      * @return A User object representing the registered user.
      * @throws ServerErrorException If there is a server error during the sign-up process.
      * @throws EmailExistsException If the provided email address already exists in the database.
-     * @throws DatabaseErrorException If there is an error with the database during user registration.
      */
-    public User signUp(User user) throws ServerErrorException, EmailExistsException, DatabaseErrorException;
+    public User signUp(User user) throws ServerErrorException, EmailExistsException;
     
     /**
      * Sign in a user with the provided user credentials.
@@ -28,8 +27,7 @@ public interface Signable {
      * @return A User object representing the signed-in user.
      * @throws ServerErrorException If there is a server error during the sign-in process.
      * @throws LoginCredentialException If the provided login credentials are invalid.
-     * @throws DatabaseErrorException If there is an error with the database during user sign-in.
      */
 
-    public User signIn(User user) throws ServerErrorException, LoginCredentialException, DatabaseErrorException;
+    public User signIn(User user) throws ServerErrorException, LoginCredentialException;
 }
