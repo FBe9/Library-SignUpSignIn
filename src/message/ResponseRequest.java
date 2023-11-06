@@ -22,7 +22,7 @@ public class ResponseRequest implements Serializable{
     }
 
     /**
-     * Constructor that initializes a ResponseRequest with user and message.
+     * Constructor that initialises a ResponseRequest with user and message.
      *
      * @param user The user associated with the response.
      * @param message The message being sent.

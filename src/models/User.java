@@ -4,13 +4,14 @@ import java.io.Serializable;
 
 /**
  * The User class represents user information in the application. It has
- * differnt attributes: email, first name, last name, mobile number, address,
+ * different attributes: email, first name, last name, mobile number, address,
  * and password. Users can have different privilege defined by the 'Privilege'
  * enumeration.
  *
- * @author Nerea and Irati
+ * @author Nerea
+ * @author Irati
  */
-public class User implements Serializable{
+public class User implements Serializable {
 
     private String email;
     private String name;
